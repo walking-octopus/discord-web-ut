@@ -1,0 +1,16 @@
+{
+    "name": "discord-web.walking-octopus",
+    "description": "An actually usable Discord web client.",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Discord Web",
+    "hooks": {
+        "discord-web": {
+            "apparmor": "discord-web.apparmor",
+            "desktop":  "discord-web.desktop",
+            "content-hub": "content-hub.json"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "walking-octopus <github.dphn6@aleeas.com>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}
