@@ -81,7 +81,7 @@ MainView {
         property bool showMenu: true
 
         function toggleMenu() {
-            webview.runJavaScript(`document.querySelectorAll(".sidebar-1tnWFu, .guilds-2JjMmN, .membersWrap-3NUR2t").forEach(function(x) {
+            webview.runJavaScript(`document.querySelectorAll(".sidebar-1tnWFu, .guilds-2JjMmN, .membersWrap-3NUR2t, .sidebarRegion-1VBisG").forEach(function(x) {
 		if (x.style.display === "none") {
 			x.style.display = "flex";
 		} else {
