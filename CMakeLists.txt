@@ -36,8 +36,11 @@ else()
 endif()
 
 configure_file(manifest.json.in ${CMAKE_CURRENT_BINARY_DIR}/manifest.json)
+configure_file(content-hub.json.in ${CMAKE_CURRENT_BINARY_DIR}/content-hub.json)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.json DESTINATION ${CMAKE_INSTALL_PREFIX})
 install(FILES ${PROJECT_NAME}.apparmor DESTINATION ${DATA_DIR})
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/content-hub.json DESTINATION ${CMAKE_INSTALL_PREFIX})
+
 
 install(DIRECTORY assets DESTINATION ${DATA_DIR})
 
