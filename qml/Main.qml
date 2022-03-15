@@ -37,7 +37,7 @@ MainView {
                 id: hideSidebarButton
                 onClicked: internal.toggleMenu()
                 iconName: internal.showMenu ? "back" : "next"
-                anchors.bottomMargin: units.gu(2)
+                anchors.bottomMargin: units.gu(8)
                 visibleState: true //!webview.loading
             }
 
