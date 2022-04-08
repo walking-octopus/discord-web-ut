@@ -40,6 +40,8 @@ MainView {
                 iconName: internal.showMenu ? "back" : "next"
                 anchors.bottomMargin: internal.showMenu ? units.gu(3) : units.gu(9)
                 visibleState: true //!webview.loading
+
+                Behavior on anchors.bottomMargin { SpringAnimation { spring: 2; damping: 0.2 } }
             }
 
             WebEngineView {
