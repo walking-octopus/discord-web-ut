@@ -14,7 +14,7 @@ UbuntuShape {
     anchors.right: parent.right
     anchors.margins: width / 2
     anchors.rightMargin: -(hideSidebarButton.width * 1.5)
-    backgroundColor: "#dedede"
+    backgroundColor: Theme.name == "Ubuntu.Components.Themes.SuruDark" ? "#202020" : "#dedede"
     aspect: UbuntuShape.DropShadow
     radius: "large"
     opacity: 0.75
@@ -23,7 +23,7 @@ UbuntuShape {
     MouseArea {
         id: mouseArea
         onPressed: parent.backgroundColor = "#888888"
-        onReleased: parent.backgroundColor = "#dedede"
+        onReleased: parent.backgroundColor = Theme.name == "Ubuntu.Components.Themes.SuruDark" ? "#202020" : "#dedede"
         anchors.fill: parent
         enabled: parent.visible
         onClicked: parent.clicked()
@@ -35,7 +35,7 @@ UbuntuShape {
         anchors.topMargin: height / 2
         anchors.centerIn: parent
         z: 14
-        color: Theme.name == "Ubuntu.Components.Themes.Ambiance" ? "black" : "white"
+        color: Theme.name == "Ubuntu.Components.Themes.SuruDark" ? "white" : "black"
     }
 
     transitions: Transition {
@@ -53,5 +53,4 @@ UbuntuShape {
             anchors.rightMargin: hideSidebarButton.width / 2
         }
     }
-
 }

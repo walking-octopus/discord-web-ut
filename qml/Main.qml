@@ -15,6 +15,7 @@ MainView {
     objectName: 'mainView'
     applicationName: 'discord-web.walking-octopus'
     automaticOrientation: true
+    Component.onCompleted: theme.name = "Ubuntu.Components.Themes.Ambiance"
     backgroundColor : "transparent"
 
     width: units.gu(75)
