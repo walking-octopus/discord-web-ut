@@ -1,9 +1,9 @@
 import QtQuick 2.9
 import Ubuntu.Components 1.3
 import QtQuick.Window 2.2
-//import Morph.Web 0.1
+import Morph.Web 0.1
 import "Components"
-import QtWebEngine 1.6
+import QtWebEngine 1.10
 //import Qt.labs.settings 1.0
 //import QtSystemInfo 5.5
 //import Ubuntu.Components.ListItems 1.3 as ListItemm
@@ -71,8 +71,14 @@ MainView {
                 onNewViewRequested: {
                     request.action = WebEngineNavigationRequest.IgnoreRequest
                     if(request.userInitiated) {
-                        Qt.openUrlExternally(request.requestedUrl)
+                        Qt.openUrlExternally(request. requestedUrl)
                     }
+                }
+                onFeaturePermissionRequested: function(url, feature) {
+                    print(url, feature)
+
+                    grantFeaturePermission(url, feature, true)
+//                     grantFeaturePermission(url, WebEngineView.MediaAudioVideoCapture, true)
                 }
             }
         }
