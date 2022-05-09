@@ -10,7 +10,7 @@
             "content-hub": "content-hub.json"
         }
     },
-    "version": "1.2.0",
+    "version": "1.2.1",
     "maintainer": "walking-octopus <github.dphn6@aleeas.com>",
     "framework" : "@CLICK_FRAMEWORK@"
 }
