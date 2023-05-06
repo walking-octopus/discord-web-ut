@@ -5,4 +5,4 @@ Icon=assets/logo.png
 Comment=An actually usable Discord web client.
 Terminal=false
 Type=Application
-X-Ubuntu-Touch=true
+X-Lomiri-Touch=true
