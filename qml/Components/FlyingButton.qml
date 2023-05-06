@@ -1,7 +1,7 @@
 import QtQuick 2.9
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
-UbuntuShape {
+LomiriShape {
 
     id: flyingButtonItem
     property var iconName: ""
@@ -14,8 +14,8 @@ UbuntuShape {
     anchors.right: parent.right
     anchors.margins: width / 2
     anchors.rightMargin: -(hideSidebarButton.width * 1.5)
-    backgroundColor: Theme.name == "Ubuntu.Components.Themes.SuruDark" ? "#202020" : "#dedede"
-    aspect: UbuntuShape.DropShadow
+    backgroundColor: Theme.name == "Lomiri.Components.Themes.SuruDark" ? "#202020" : "#dedede"
+    aspect: LomiriShape.DropShadow
     radius: "large"
     opacity: 0.75
 
@@ -23,7 +23,7 @@ UbuntuShape {
     MouseArea {
         id: mouseArea
         onPressed: parent.backgroundColor = "#888888"
-        onReleased: parent.backgroundColor = Theme.name == "Ubuntu.Components.Themes.SuruDark" ? "#202020" : "#dedede"
+        onReleased: parent.backgroundColor = Theme.name == "Lomiri.Components.Themes.SuruDark" ? "#202020" : "#dedede"
         anchors.fill: parent
         enabled: parent.visible
         onClicked: parent.clicked()
@@ -35,7 +35,7 @@ UbuntuShape {
         anchors.topMargin: height / 2
         anchors.centerIn: parent
         z: 14
-        color: Theme.name == "Ubuntu.Components.Themes.SuruDark" ? "white" : "black"
+        color: Theme.name == "Lomiri.Components.Themes.SuruDark" ? "white" : "black"
     }
 
     transitions: Transition {

@@ -1,13 +1,13 @@
 import QtQuick 2.9
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import QtQuick.Window 2.2
 import Morph.Web 0.1
 import "Components"
 import QtWebEngine 1.10
 //import Qt.labs.settings 1.0
 //import QtSystemInfo 5.5
-//import Ubuntu.Components.ListItems 1.3 as ListItemm
-import Ubuntu.Content 1.3
+//import Lomiri.Components.ListItems 1.3 as ListItemm
+import Lomiri.Content 1.3
 
 
 MainView {
@@ -15,7 +15,7 @@ MainView {
     objectName: 'mainView'
     applicationName: 'discord-web.walking-octopus'
     automaticOrientation: true
-    Component.onCompleted: theme.name = "Ubuntu.Components.Themes.Ambiance"
+    Component.onCompleted: theme.name = "Lomiri.Components.Themes.Ambiance"
     backgroundColor : "transparent"
 
     width: units.gu(75)
